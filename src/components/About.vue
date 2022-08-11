@@ -1,7 +1,7 @@
 <template>
     <div class="container w50 center tiny-w50" @click="play" >
         <header class="txtcenter mt2">
-            <img  src="@/assets/Katy.Millard.png"  alt="Avatar" />
+            <img  class="katy" src="@/assets/Katy.Millard.png"  alt="Avatar" />
             <h1>Katy Millard</h1>
             <h2 class="ma0">Junior Software Developer</h2>
             <h4>Kansas City, Missouri</h4>
@@ -55,13 +55,16 @@ export default {
   from { opacity: 0; }
   to  { opacity: 1; }
 } */
-
-header img {
+.carousel-3d-slide img {
+    width: 40%;
+}
+.katy {
   border-radius: 50%;
   border: 5px solid #5DC5D8;
   background-color: #5DDFD0;
-  width: 5%;
-  height: 5%;
+  width: 200px;
+  height: 200px;
+  
 }
 
 header {

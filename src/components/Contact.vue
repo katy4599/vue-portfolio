@@ -1,6 +1,6 @@
 <template>
     <div class="contact">
-      <h2>Feel free to contact me!</h2>
+      <h1>Feel free to contact me!</h1>
       <div class="icons">
         <a :href="linkedin">
           <img class="socialLink" src="@/assets/LinkedIn.webp" />
@@ -12,6 +12,7 @@
           <img class="socialLink" src="@/assets/Email.png" />
         </a>
       </div>
+      
     </div>  
       
 </template>
@@ -34,17 +35,21 @@ export default {
 
 .contact {
   text-align: center;
+  margin-top: 30%;
 }
 
 .icons {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 50px;
 }
 
   .socialLink {
-    width: auto;
-    height: 75px;
-    padding: 10px;
+    width: 4rem;
+    height: 3rem;
+    padding: 0px;
   }
+
+  
 </style>
