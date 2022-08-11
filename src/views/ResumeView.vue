@@ -1,21 +1,24 @@
 <template>
   <div class="resume">
-    <nav class="resumeNav">
-      
-        <router-link to="/" class="link">Home</router-link> |
-        <a href="/files/KatyMillard.pdf" download><btn class="link">Download Resume</btn></a>
-        
-    </nav>
     <img src="@/assets/Resume.png" class="resumeImg" />
+    <VueScrollFixedNavbar :isFixed="true" class="resumeNav">
+      <nav class="link" >
+        
+          <router-link to="/" class="link">Home</router-link> |
+          <a href="/files/KatyMillard.pdf" class="link" download><btn >Download Resume</btn></a>
+          
+      </nav>
+    </VueScrollFixedNavbar>
   </div>
 </template>
 
 <script>
+  import {VueScrollFixedNavbar} from "vue-scroll-fixed-navbar";
 
   export default {
     name: 'ResumeView',
     components: {
-      
+      VueScrollFixedNavbar
     }
   }
 </script>
@@ -32,6 +35,7 @@ html {
   bottom: 0px;
   left: 0px;
   right: 0px;
+  font-family: Ubuntu, Helvetica, Arial, sans-serif;
 }
 
 .resume {
@@ -53,12 +57,15 @@ html {
   width: 100%;
   position: fixed;
   height: 12.5%;
-
-  top: 5%;
+  background-color: #5F97E0;
+  top: 0;
+  left: 0;
 }
 
 .link {
-  margin-top: 5%;
+  margin-top: 2% !important;
+  color: #023047;
+  text-decoration: none;
 }
 
 .resumeImg {
@@ -67,7 +74,7 @@ html {
   margin-top: 10%;
   width: 70%;
   height: auto;
-  border: 5px solid #675CE0;
-  
+  border: 5px solid #5F97E0;
+  z-index: 1;
 }
 </style>

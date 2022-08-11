@@ -1,7 +1,7 @@
 <template>
     <div class="container w50 center tiny-w50" @click="play" >
         <header class="txtcenter mt2">
-            <img  class="katy" src="@/assets/Katy.Millard.png"  alt="Avatar" />
+            <img  class="katy" src="@/assets/KatyHead.jpg"  alt="Avatar" />
             <h1>Katy Millard</h1>
             <h2 class="ma0">Junior Software Developer</h2>
             <h4>Kansas City, Missouri</h4>
@@ -9,7 +9,9 @@
     
         <section class="mt3 mb3 pa1">
             <p class="bigger">
-            And if you threw a party - invited everyone you knew. You would see the biggest gift would be from me and the card attached would say thank you for being a friend! 
+            I am a highly-motivated IT professional with expertise across several platforms,
+            including full-stack development, implementation, and UI/UX design. I am a life long
+            Kansas Citian who actually enjoys our Winter weather!
             </p>
         </section>
     </div>
@@ -68,13 +70,13 @@ export default {
 }
 
 header {
-  font-family: 'Merriweather', serif;
+  font-family: Ubuntu, Helvetica, Arial, sans-serif;
   margin-top: 7px;
   text-align: center;
 }
 
 section {
-  font-family: 'Merriweather Sans', serif;
+  font-family: Ubuntu, Helvetica, Arial, sans-serif;
   text-align: center;
   font-size: .8em;
   color: #023047;

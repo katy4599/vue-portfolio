@@ -33,6 +33,7 @@ export default {
 
 .project {
     text-align: center;
+    font-family: Ubuntu, Helvetica, Arial, sans-serif;
 }
 
 .projectImg {

@@ -36,6 +36,7 @@ export default {
 .contact {
   text-align: center;
   margin-top: 30%;
+  font-family: Ubuntu, Helvetica, Arial, sans-serif;
 }
 
 .icons {

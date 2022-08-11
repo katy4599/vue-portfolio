@@ -39,6 +39,7 @@ export default {
 
 .exp {
   text-align: center;
+  font-family: Ubuntu, Helvetica, Arial, sans-serif;
 }
 
 .work h3 {
