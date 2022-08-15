@@ -25,7 +25,7 @@ export default {
   data() {
         return {
             github: 'https://github.com/katy4599',
-            linkedin: 'https://www.linkedin.com/in/'
+            linkedin: 'https://www.linkedin.com/in/katy-millard'
         }
   }
 }
