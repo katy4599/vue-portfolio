@@ -6,9 +6,9 @@
       <router-link to="/" class="link">Home</router-link> |
       <router-link to="/resume" class="link">Resume</router-link>
       <div class="carouselCont">
-        <carousel-3d class="carousel" :perspective="180" :controlsWidth="20" :controls-visible="true" :width="530" :height="490" :display="1">
+        <carousel-3d class="carousel" :perspective="180" :controlsWidth="20" :controls-visible="true" :width="530" :height="480" :display="1">
           <slide class="slide" :index="0">
-            <About id="about" /> 
+            <About id="about" @click="play" /> 
           </slide>  
           <slide class="slide" :index="1">
             <Experience id="experience" />
@@ -61,8 +61,13 @@ import Contact from '@/components/Contact.vue'
 import Project from '@/components/Project.vue'
 import Project2 from '@/components/Project2.vue'
 import { Carousel3d, Slide } from 'vue-carousel-3d';
+import { computed } from 'vue'
+// import { useSound } from '@vueuse/sound'
+// import buttonSfx from '@/assets/SoundClip.mp3'
 
 export default {
+  // var myClip: new Audio(require('@/assets/SoundClip.mp3')),
+
   name: 'HomeView',
   components: {
     HelloWorld,
@@ -73,9 +78,27 @@ export default {
     Experience,
     Project,
     Project2
+  },
+  props: [
+    'width',
+    'height',
+    'border'
+    ],
+  computed: {
+    slideHeight () {
+    const sw = parseInt(this.width, 10) + (parseInt(this.border, 10) * 2)
+    const sh = parseInt(parseInt(this.height) + (this.border * 2), 10)
+    const ar = this.calculateAspectRatio(sw, sh)
+    return this.slideWidth / ar
+    }
   }
-}
-          
+//   methods: {
+//     playClip() {
+//       myClip.play()
+//     }
+//   }
+// }
+}         
 </script>
 
 <style>
@@ -84,7 +107,7 @@ export default {
   position: fixed;
   height: 100%;
   width: 100%;
-  background-color: #b1efe5;
+  background-color: #caf0f8;
   top: 0px;
   bottom: 0px;
 }
@@ -116,6 +139,7 @@ export default {
   width: 70%;
   margin-left: 15%;
   margin-right: 15%;
+  height: 70%;
 }
 .carousel {
   padding-top: 15px;
@@ -129,9 +153,9 @@ export default {
 .slide {
   background-position: center;
   background-size: cover;
-  width: 600px;
-  height: auto;
-  background-color: #5DC5D8;
+  width: 100% !important;
+  height: 100% !important;
+  background-color: #5F97E0;
 } 
 
 .dogs {

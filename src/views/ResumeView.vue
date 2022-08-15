@@ -5,7 +5,7 @@
       <nav class="link" >
         
           <router-link to="/" class="link">Home</router-link> |
-          <a href="/files/KatyMillard.pdf" class="link" download><btn >Download Resume</btn></a>
+          <a href="/files/KatyMillard.pdf" class="link" download><btn>Download Resume</btn></a>
           
       </nav>
     </VueScrollFixedNavbar>
@@ -45,7 +45,7 @@ html {
   justify-items: center;
   /* position: fixed; */
   height: auto;
-  background-color: #b1efe5;
+  background-color: #caf0f8;
   background-size: cover;
   top: 0px;
   bottom: 0px;

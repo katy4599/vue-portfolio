@@ -1,5 +1,5 @@
 <template>
-    <div class="container w50 center tiny-w50" @click="play" >
+    <div class="container w50 center tiny-w50" >
         <header class="txtcenter mt2">
             <img  class="katy" src="@/assets/KatyHead.jpg"  alt="Avatar" />
             <h1>Katy Millard</h1>
@@ -27,20 +27,13 @@
 </template>
 
 <script>
-import { useSound } from '@vueuse/sound'
-import buttonSfx from '../assets/SoundClip.mp3'
+
 
 export default {
   name: 'About',
   props: {
     },
-  setup() {
-    const { play, stop } = useSound(buttonSfx)
-      return {
-        play,
-        stop
-      }
-  },
+  
 }
 
 </script>
