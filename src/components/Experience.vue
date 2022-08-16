@@ -17,7 +17,8 @@
         <h1>Skills</h1>
         <ul class="list">
           <li>JavaScript</li>
-          <li>HTML/CSS</li>
+          <li>HTML</li>
+          <li>CSS</li>
           <li>GitHub</li>
           <li>React</li>
           <li>Vue</li>
@@ -44,8 +45,8 @@ export default {
 
 .work h3 {
   font-size: .8rem;
-  margin-top: -12%;
-  margin-left: 34%;
+  margin-top: -9%;
+  margin-left: 38%;
   text-align: left;
   margin-right: 10% !important;
   
@@ -53,7 +54,7 @@ export default {
 
 .work p {
   width: 80% !important;
-  margin-top: 25px;
+  margin-top: 6%;
 }
 
 .work {
@@ -66,11 +67,11 @@ export default {
   width: 75px !important;
   height: 75px !important;
   margin-right: 375px;
-  margin-left: 15%;
+  margin-left: 9%;
 }
 
 .list {
   text-align: left;
-  margin-left: 35%;
+  margin-left: 40%;
 }
 </style>

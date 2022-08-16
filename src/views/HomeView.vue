@@ -6,22 +6,23 @@
       <router-link to="/" class="link">Home</router-link> |
       <router-link to="/resume" class="link">Resume</router-link>
       <div class="carouselCont">
-        <carousel-3d class="carousel" :perspective="180" :controlsWidth="20" :controls-visible="true" :width="530" :height="480" :display="1">
-          <slide class="slide" :index="0">
+        <agile class="carousel" :nav-buttons="true" :fade="true" :dots="true" :initial-slide="0" :slides-to-show="1" >
+          <div class="slide" :index="0">
             <About id="about" @click="play" /> 
-          </slide>  
-          <slide class="slide" :index="1">
+          </div>  
+          <div class="slide" :index="1">
             <Experience id="experience" />
-          </slide>  
-          <slide class="slide" :index="2">
+          </div>  
+          <div class="slide" :index="2">
             <Project id="project" /> 
-          </slide> 
-          <slide class="slide" :index="3">
+          </div> 
+          <div class="slide" :index="3">
             <Project2 id="project2" /> 
-          </slide> 
-          <slide class="slide" :index="4">
+          </div> 
+          <div class="slide" :index="4">
             <h1 class="dogs">The Millard Team</h1>
             <h3 class="dogs">Gunner</h3>
+            <h4 class="dogs">Chief of Security</h4>
             <img src="@/assets/Gunner.jpg" class="dogsGun" />
             <p class="dogAbout">Gunner has been a loyal member of the Millard team since 2018, when
               he graduated from Wayside Waifs. He contributes an immense amount of emotional support
@@ -30,10 +31,11 @@
               life by loudly alerting her to every killer rabbit and attack squirrel that twitches, within a 
               two mile radius. Great Job Gunner!!!
             </p>
-          </slide> 
-          <slide class="slide" :index="5">
+          </div> 
+          <div class="slide" :index="5">
             <h1 class="dogs">The Millard Team</h1>
             <h3 class="dogs">Ranger</h3>
+            <h4 class="dogs">Security Apprentice</h4>
             <img src="@/assets/Ranger.jpg" class="dogsRange" />
             <p class="dogAbout">Meet Ranger! He is the newest member of the team, joining us in June 2022,
               after ending his tenure with Unleashed Pet Rescue. He brings an abundant amount 
@@ -42,11 +44,13 @@
               and skills. He is most excited to learn what "no" means, as is his human team leader. We look
               forward to seeing what toy Ranger murders next!!!
             </p>
-          </slide> 
-          <slide class="slide" :index="6">
+          </div> 
+          <div class="slide" :index="6">
             <Contact id="contact" /> 
-          </slide> 
-        </carousel-3d>
+          </div> 
+          <template class="button" slot="prevButton">prev</template>
+          <template class="button" slot="nextButton">next</template>
+        </agile>
       </div>
     </div>
   </div>
@@ -61,6 +65,7 @@ import Contact from '@/components/Contact.vue'
 import Project from '@/components/Project.vue'
 import Project2 from '@/components/Project2.vue'
 import { Carousel3d, Slide } from 'vue-carousel-3d';
+import { VueAgile } from 'vue-agile'
 import { computed } from 'vue'
 // import { useSound } from '@vueuse/sound'
 // import buttonSfx from '@/assets/SoundClip.mp3'
@@ -71,6 +76,7 @@ export default {
   name: 'HomeView',
   components: {
     HelloWorld,
+    agile: VueAgile,
     Carousel3d, 
     Slide,
     About,
@@ -130,52 +136,63 @@ export default {
   text-decoration: none;
 }
 
-.carousel-3d-slide img {
+/* .carousel-3d-slide img {
     width: 40%;
     height: 40%;
-}
+} */
 
 .carouselCont {
-  width: 70%;
-  margin-left: 15%;
-  margin-right: 15%;
-  height: 70%;
+  width: 56%;
+  margin-left: 22%;
+  margin-right: 22%;
+  height: 90% !important;
 }
+
 .carousel {
+  width: 100%;
+  height: 100%;
+}
+/* .carousel {
   padding-top: 15px;
   margin-bottom: 12.5%;
   /* margin-right: 20%;
   margin-left: 20%; */
-  z-index: -1;
+  /* z-index: -1; */
   /* animation: fadeIn 3s;   */
-}
+
 
 .slide {
   background-position: center;
   background-size: cover;
-  width: 100% !important;
-  height: 100% !important;
+  width: 100%;
+  height: 100%;
   background-color: #5F97E0;
 } 
+
+.button {
+  padding-top: 20px;
+  background-color: #5F97E0 !important;
+  font-family: Ubuntu, Helvetica, Arial, sans-serif;
+}
 
 .dogs {
   text-align: center;
   margin-bottom: 0px;
-  margin-top: 10px;
+  margin-top: 2.5%;
 }
 
 .dogsGun {
-  width: 200px !important;
-  height: 200px !important;
-  padding-left: 30% !important;
-  padding-top: 10px;
+  width: 25%;
+  height: auto;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
 }
 
 .dogsRange {
-  width: 200px !important;
-  height: 200px !important;
-  padding-left: 30% !important;
-  padding-top: 10px;
+  width: 25%;
+  height: auto;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
 }
 
 .dogAbout {

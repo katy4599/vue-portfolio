@@ -5,7 +5,7 @@
         <h3>Rock-Paper-Scissors</h3>
         <img class="projectImg" src="@/assets/RPS.png" />
         <p class="desc">As an apprentice assignment, this JavaScript project uses 
-            session storage to maintain the score to the Rock-Paper-Scissors
+            session storage to maintain the score to the classic Rock-Paper-Scissors
             game. The score only resets when the New Game button is clicked.</p>
         <a :href="rpsUrl">
             <p>Try it Live!!!</p>

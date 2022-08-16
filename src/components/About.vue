@@ -64,7 +64,7 @@ export default {
 
 header {
   font-family: Ubuntu, Helvetica, Arial, sans-serif;
-  margin-top: 7px;
+  margin-top: 5%;
   text-align: center;
 }
 
@@ -73,8 +73,8 @@ section {
   text-align: center;
   font-size: .8em;
   color: #023047;
-  width: 80%;
-  margin-left: 10%;
+  width: 60%;
+  margin-left: 20%;
   
 }
 
