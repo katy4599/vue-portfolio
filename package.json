@@ -11,6 +11,7 @@
     "core-js": "^3.8.3",
     "loader": "^2.1.1",
     "vue": "^2.7.8",
+    "vue-agile": "^2.0.0",
     "vue-carousel-3d": "^1.0.1",
     "vue-router": "^3.5.1",
     "vue-scroll-fixed-navbar": "^0.2.2",
