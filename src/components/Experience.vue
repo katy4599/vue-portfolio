@@ -54,7 +54,7 @@ export default {
 
 .work p {
   width: 80% !important;
-  margin-top: 6%;
+  margin-top: 3%;
 }
 
 .work {
@@ -73,5 +73,6 @@ export default {
 .list {
   text-align: left;
   margin-left: 40%;
+  margin-top: 3% !important;
 }
 </style>

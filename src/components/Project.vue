@@ -29,7 +29,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 .project {
     text-align: center;
@@ -39,12 +39,13 @@ export default {
 .projectImg {
     width: 60% !important;
     height: 40% !important;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    /* padding-top: 10px; */
+    /* padding-bottom: 10px; */
 }
 
 .desc {
     width: 60%;
     padding-left: 20%;
+    margin-top: 2%;
 }
 </style>

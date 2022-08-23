@@ -28,22 +28,25 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 .project2 {
     text-align: center;
     font-family: Ubuntu, Helvetica, Arial, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px !important;
 }
 
 .projectImg {
     width: 60% !important;
     height: 40% !important;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    /* padding-top: 10px; */
+    /* padding-bottom: 15px; */
 }
 
 .desc {
     width: 60%;
     padding-left: 20%;
+    margin-bottom: 10px;
 }
 </style>

@@ -3,8 +3,8 @@
     
     <HelloWorld />
     <div class="fade-in">
-      <router-link to="/" class="link">Home</router-link> |
-      <router-link to="/resume" class="link">Resume</router-link>
+      <router-link to="/" class="link">home</router-link> |
+      <router-link to="/resume" class="link">resume</router-link>
       <div class="carouselCont">
         <agile class="carousel" :nav-buttons="true" :fade="true" :dots="true" :initial-slide="0" :slides-to-show="1" >
           <div class="slide" :index="0">
@@ -21,8 +21,8 @@
           </div> 
           <div class="slide" :index="4">
             <h1 class="dogs">The Millard Team</h1>
-            <h3 class="dogs">Gunner</h3>
-            <h4 class="dogs">Chief of Security</h4>
+            <h3 class="dogs2">Gunner</h3>
+            <h4 class="dogs2">Chief of Security</h4>
             <img src="@/assets/Gunner.jpg" class="dogsGun" />
             <p class="dogAbout">Gunner has been a loyal member of the Millard team since 2018, when
               he graduated from Wayside Waifs. He contributes an immense amount of emotional support
@@ -34,8 +34,8 @@
           </div> 
           <div class="slide" :index="5">
             <h1 class="dogs">The Millard Team</h1>
-            <h3 class="dogs">Ranger</h3>
-            <h4 class="dogs">Security Apprentice</h4>
+            <h3 class="dogs2">Ranger</h3>
+            <h4 class="dogs2">Security Apprentice</h4>
             <img src="@/assets/Ranger.jpg" class="dogsRange" />
             <p class="dogAbout">Meet Ranger! He is the newest member of the team, joining us in June 2022,
               after ending his tenure with Unleashed Pet Rescue. He brings an abundant amount 
@@ -145,7 +145,7 @@ export default {
   width: 56%;
   margin-left: 22%;
   margin-right: 22%;
-  height: 90% !important;
+  height: 84% !important;
 }
 
 .carousel {
@@ -169,37 +169,69 @@ export default {
   background-color: #5F97E0;
 } 
 
-.button {
-  padding-top: 20px;
+
+.agile__actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px !important;
+}
+
+.agile__dot button {
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    padding: 5px;
+    height: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+button {
+  
   background-color: #5F97E0 !important;
   font-family: Ubuntu, Helvetica, Arial, sans-serif;
+  color: #023047;
+  border: none;
+  width: 10%;
+  height: 35px;
+  /* margin-left: 5px;
+  margin-right: 5px; */
+  margin-bottom: 3px !important;
 }
 
 .dogs {
   text-align: center;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
   margin-top: 2.5%;
+}
+
+.dogs2 {
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 0%;
 }
 
 .dogsGun {
   width: 25%;
   height: auto;
   padding-top: 2.5%;
-  padding-bottom: 2.5%;
+  /* padding-bottom: 2.5%; */
 }
 
 .dogsRange {
   width: 25%;
   height: auto;
   padding-top: 2.5%;
-  padding-bottom: 2.5%;
+  /* padding-bottom: 2.5%; */
 }
 
 .dogAbout {
   text-align: center !important;
   margin-left: 10% !important;
   margin-right: 10% !important;
-  margin-top: 5px;
+  margin-top: 10px;
   width: 80% !important;
 }
 

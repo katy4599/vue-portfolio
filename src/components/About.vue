@@ -38,7 +38,7 @@ export default {
 
 </script>
 
-<style>
+<style scoped>
 
 .container {
   opacity: 1;
@@ -64,7 +64,7 @@ export default {
 
 header {
   font-family: Ubuntu, Helvetica, Arial, sans-serif;
-  margin-top: 5%;
+  margin-top: 2.5%;
   text-align: center;
 }
 
@@ -73,8 +73,8 @@ section {
   text-align: center;
   font-size: .8em;
   color: #023047;
-  width: 60%;
-  margin-left: 20%;
+  width: 70%;
+  margin-left: 15%;
   
 }
 

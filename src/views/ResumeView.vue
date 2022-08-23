@@ -4,8 +4,8 @@
     <VueScrollFixedNavbar :isFixed="true" class="resumeNav">
       <nav class="link" >
         
-          <router-link to="/" class="link">Home</router-link> |
-          <a href="/files/KatyMillard.pdf" class="link" download><btn>Download Resume</btn></a>
+          <router-link to="/" class="link">home</router-link> |
+          <a href="/files/KatyMillard.pdf" class="link" download><btn>download resume</btn></a>
           
       </nav>
     </VueScrollFixedNavbar>
