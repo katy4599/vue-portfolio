@@ -12,7 +12,7 @@
           <img class="socialLink" src="@/assets/Email.png" />
         </a>
       </div>
-      <form name="contact" method="POST" data-netlify="true">
+      <form name="contact" method="POST" content-type="application/x-www-form-urlencoded" data-netlify="true" netlify>
         <p>
           <label>Your Name: <input type="text" name="name" /></label>
         </p>
