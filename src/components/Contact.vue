@@ -34,7 +34,7 @@ export default {
 
 .contact {
   text-align: center;
-  margin-top: 2.5%;
+  margin-top: 22.5%;
   font-family: Ubuntu, Helvetica, Arial, sans-serif;
   display: flex;
   flex-direction: column;
