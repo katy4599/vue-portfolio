@@ -1,13 +1,13 @@
 <template>
-    <div class="container w50 center tiny-w50" >
-        <header class="txtcenter mt2">
+    <div>
+        <header>
             <img  class="katy" src="@/assets/KatyHead.jpg"  alt="Avatar" />
             <h1>Katy Millard</h1>
             <h2 class="ma0">Junior Software Developer</h2>
             <h4>Kansas City, Missouri</h4>
         </header>
     
-        <section class="mt3 mb3 pa1">
+        <section>
             <p class="bigger">
             I am a highly-motivated IT professional with expertise across several platforms,
             including full-stack development, implementation, and UI/UX design. I am a life long
@@ -71,7 +71,7 @@ header {
 section {
   font-family: Ubuntu, Helvetica, Arial, sans-serif;
   text-align: center;
-  font-size: .8em;
+  font-size: .9em;
   color: #023047;
   width: 60%;
   margin-left: 20%;
