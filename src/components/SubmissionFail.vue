@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>Oops, looks like something went wrong!</h1>
+  <div class="msg">
+    <h1>You were right, it doesn't work!</h1>
     <router-link to="/">
       <button>Back to Home</button>
     </router-link>
@@ -26,6 +26,10 @@ html {
   left: 0px;
   right: 0px;
   font-family: Ubuntu, Helvetica, Arial, sans-serif;
+}
+
+.msg {
+    margin-top: 10%;
 }
 
 </style>

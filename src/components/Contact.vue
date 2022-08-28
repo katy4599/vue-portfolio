@@ -15,7 +15,7 @@
       <div>
         <h3 class="form-desc">Use the form below to provide any feedback regarding
           this site, remind me how cute my security team is, or just
-          see if this form really works.</h3>
+          see if I really got this form to work.</h3>
         <form netlify @submit.prevent="handleSubmit" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
           <p style="display: none;" class="hidden">
             <label>Don't fill this out if you are human: <input name="bot-field" /></label>
@@ -109,8 +109,9 @@ export default {
   }
 
 .form-desc {
-  width: 70%;
-  padding-left: 15%;
+  width: 65%;
+  padding-left: 18%;
+  padding-bottom: 15px;
 }
   
 </style>
