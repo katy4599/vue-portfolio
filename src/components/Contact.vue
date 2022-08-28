@@ -65,7 +65,7 @@ export default {
         },
         body: this.encode({
           'form-name': 'contact',
-          ...form
+          ...this.form
         })
       })
       .then(() => console.log('successfully sent'))
