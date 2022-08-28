@@ -38,17 +38,18 @@
 <script>
 export default {
   name: 'Contact',
-  props: {
+  
+  data () {
+    return {
+      form: {
+        name: '',
+        email: '',
+        message: ''
+      },
+      github: 'https://github.com/katy4599',
+      linkedin: 'https://www.linkedin.com/in/katy-millard'
+    }
   },
-  data: () => ({
-    form: {
-      name: '',
-      email: '',
-      message: ''
-    },
-    github: 'https://github.com/katy4599',
-    linkedin: 'https://www.linkedin.com/in/katy-millard'
-  }),
   
   methods: {
     encode(data) {
