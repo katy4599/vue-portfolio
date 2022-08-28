@@ -14,7 +14,7 @@
       </div>
       <div>
         <h3 class="form-desc">Use the form below to provide any feedback regarding
-          this site, remind me how cute my security team is, or just
+          this site, remind me how cute my security team is, or just to
           see if I really got this form to work.</h3>
         <form netlify @submit.prevent="handleSubmit" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
           <p style="display: none;" class="hidden">
