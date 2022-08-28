@@ -13,7 +13,7 @@
         </a>
       </div>
       <div>
-        <form @submit.prevent="handleSubmit" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+        <form netlify @submit.prevent="handleSubmit" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
           <p style="display: none;" class="hidden">
             <label>Don't fill this out if you are human: <input name="bot-field" /></label>
           </p>
