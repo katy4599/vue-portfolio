@@ -169,10 +169,33 @@ export default {
   background-color: #5F97E0;
 } 
 
-.button {
-  padding-top: 20px;
+
+.agile__actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px !important;
+}
+.agile__dot button {
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    padding: 5px;
+    height: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+button {
+  
   background-color: #5F97E0 !important;
   font-family: Ubuntu, Helvetica, Arial, sans-serif;
+  color: #023047;
+  border: none;
+  width: 10%;
+  height: 35px;
+  /* margin-left: 5px;
+  margin-right: 5px; */
+  margin-bottom: 3px !important;
 }
 
 .dogs {

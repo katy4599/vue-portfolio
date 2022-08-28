@@ -13,6 +13,9 @@
         </a>
       </div>
       <div>
+        <h3 class="form-desc">Use the form below to provide any feedback regarding
+          this site, remind me how cute my security team is, or just
+          see if this form really works.</h3>
         <form netlify @submit.prevent="handleSubmit" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
           <p style="display: none;" class="hidden">
             <label>Don't fill this out if you are human: <input name="bot-field" /></label>
@@ -68,8 +71,12 @@ export default {
           ...this.form
         })
       })
-      .then(() => console.log('successfully sent'))
-      .catch(e => console.error(e))
+      .then(() => {
+        this.$router.push('thanks')
+      })
+      .catch(() => {
+        this.$router.push('404')
+      })
     }
   }
 }
@@ -101,5 +108,9 @@ export default {
     padding: 15px;
   }
 
+.form-desc {
+  width: 70%;
+  padding-left: 15%;
+}
   
 </style>
